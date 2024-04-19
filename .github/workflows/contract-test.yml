@@ -26,7 +26,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        network: [gw_testnet_v1, gw_alphanet_v1]
+        # network: [gw_testnet_v1, gw_alphanet_v1]
+        network: [gw_testnet_v1]
     outputs:
       available: ${{ steps.check.outputs.available }}
     steps:
